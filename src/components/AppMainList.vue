@@ -63,12 +63,20 @@
 </script>
 
 <template>
-    <ul v-for="(list, index) in mainList">
-        <li><h2>{{ list.title }}</h2></li>
-        <li v-for="(list, index) in list.link"><a href="">{{ list }}</a></li>
-    </ul>
+    <section >
+        <section class="container">
+            <div class="lists">
+                <ul v-for="(list, index) in mainList">
+                    <li class="title"><h2>{{ list.title }}</h2></li>
+                    <li  v-for="(list, index) in list.link"><a class="link" href="">{{ list }}</a></li>
+                </ul>
+            </div>
+
+            <img src="../assets/img/dc-logo-bg.png" alt="">
+        </section>
+    </section>
 </template>
 
-<style scoped>
-
+<style scoped lang="scss">
+@use "../style/AppMainList.scss";
 </style>
