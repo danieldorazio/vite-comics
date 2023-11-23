@@ -15,10 +15,10 @@
 </script>
 
 <template>
-  <Header></Header>
-  <Content></Content>
-  <MainList></MainList>
-  <Footer></Footer>
+    <Header></Header>
+    <Content></Content>
+    <MainList></MainList>
+    <Footer></Footer>
 </template>
 
 <style lang="scss">

@@ -1,16 +1,36 @@
 @use "./partials/varables" as *;
 
 
+/**************RESET****************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: sans-serif;
+};
 
 img {
     max-width: 100%;
+};
+
+li {
+    list-style: none;
+};
+
+a {
+    text-decoration: none;
+    
+};
+
+/***********************COMMON********************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+};
+
+.p-top-bottom {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-h1 {
-    color: $primary_color;
-}
+
