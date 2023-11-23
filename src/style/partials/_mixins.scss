@@ -5,7 +5,9 @@
     align-items: $align-items;
 };
 
-@mixin my-container {
-    width: 90%;
-    margin: 0 auto;
+@mixin my-padding ($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
 }

@@ -3,9 +3,11 @@
 </script>
 
 <template>
-    <h1>CONTENT</h1>
+    <section class="content">
+        <p class="container"> --> Content goes here &lt;-- </p>
+    </section>
 </template>
 
-<style scoped>
-
+<style scoped lang="scss">
+    @use "../style/AppContent.scss"
 </style>

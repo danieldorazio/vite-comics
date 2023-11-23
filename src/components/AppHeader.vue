@@ -50,7 +50,7 @@
 </script>
 
 <template>
-    <header class="container p-top-bottom">
+    <header class="container">
         <img src="../assets/img/dc-logo.png" alt="">
 
         <ul>

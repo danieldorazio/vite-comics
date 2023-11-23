@@ -1,0 +1,12 @@
+@use "./partials/mixins" as*;
+@use "./partials/varables" as*;
+
+.content {
+    background-color: $bg-content;
+    p {
+        color: white;
+        @include my-padding(50px, 0, 50px, 0);
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

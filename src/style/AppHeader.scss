@@ -4,6 +4,7 @@
 header {
     height: 70px;
     @include my-flex(row, space-between, center);
+    @include my-padding(50px, 0, 50px, 0);
     
     img {
         width: 60px;
