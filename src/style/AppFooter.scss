@@ -1,0 +1,38 @@
+@use "./partials/mixins" as*;
+@use "./partials/varables" as*;
+
+section {
+    background-color: #303030;
+
+    .container {
+        @include my-flex(row, space-between, center);
+
+        button {
+            font-size: .5rem;
+            color: white;
+            background-color: #303030;
+            @include my-padding (5px, 5px, 5px, 5px);
+            border: 1px solid $hover_nav_bar;
+            cursor: pointer;
+        }
+
+        .social {
+            @include my-padding (20px, 20px, 20px, 20px);
+            ul {
+                @include my-flex(row, space-between, center);
+                gap: 10px;
+
+                .title {
+                    font-size: 0.5rem;
+                    color: $hover_nav_bar;
+                }
+
+                .icon {
+                    width: 1rem;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+}

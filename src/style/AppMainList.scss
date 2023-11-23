@@ -1,4 +1,5 @@
 @use "./partials/mixins" as *;
+@use "./partials/varables" as *;
 
 section {
     background-image: url(../assets/img/footer-bg.jpg);
@@ -9,6 +10,8 @@ section {
     @include my-flex (row, space-between, center);
     
     section.container {
+       
+
         .lists {
             @include my-flex (row, space-between, top);
             flex-wrap: wrap;
@@ -18,22 +21,21 @@ section {
                 width: calc(100% / 4);
 
                 li.title {
-                    color: white;
-                    @include my-padding (50px, 0, 10px, 0);
+                    font-size: .5rem;
+                    color: $main-list-li-title;
+                    @include my-padding (20px, 0, 5px, 0)
                 }
 
                 li {
-                    a.link {
-                        color: rgba(255, 255, 255, 0.468);
-                    }
+                    @include my-padding (5px, 0, 0, 0);
 
-                    @include my-padding (10px, 0, 0, 0);
-        
-                
-                }
-                
+                    a.link {
+                        font-size: .8rem;
+                        color: $main-list-li-link;
+                        
+                    }
+                }   
             }
-        
         }
 
         img {
