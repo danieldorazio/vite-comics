@@ -2,9 +2,7 @@
 @use "./partials/varables" as *;
 
 header {
-    height: 70px;
     @include my-flex(row, space-between, center);
-    @include my-padding(50px, 0, 50px, 0);
     
     img {
         width: 60px;
@@ -14,10 +12,19 @@ header {
         @include my-flex(row, space-between, center);
         gap: 20px;
 
+        li {
+            height: 70px;
+            @include my-flex (row, start, center);
+            &:hover {
+                border-bottom: 3px solid $hover_nav_bar;
+            }
+        }
+
         a {
+            font-size: .7rem;
             font-weight: bold;
             &:hover {
-                color: $hover_nav_bar;
+                color: $hover_nav_bar;   
             }
             
         }

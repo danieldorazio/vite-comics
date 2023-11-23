@@ -54,7 +54,11 @@
         <img src="../assets/img/dc-logo.png" alt="">
 
         <ul>
-            <li v-for ="navBarObj in navBar" ><a href="">{{ navBarObj.text }}</a></li>
+            <li v-for ="navBarObj in navBar" >
+                <a href="">
+                    {{ navBarObj.text }}
+                </a>
+            </li>
         </ul>
     </header>
 </template>
