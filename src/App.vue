@@ -1,6 +1,7 @@
 <script>
   import Header from './components/AppHeader.vue';
   import Content from './components/AppContent.vue';
+  import Hero from './components/AppHero.vue';
   import MainList from './components/AppMainList.vue';
   import Footer from './components/AppFooter.vue';
 
@@ -8,6 +9,7 @@
     components: {
       Header,
       Content,
+      Hero,
       MainList,
       Footer,
     }
@@ -17,6 +19,7 @@
 <template>
     <Header></Header>
     <Content></Content>
+    <Hero></Hero>
     <MainList></MainList>
     <Footer></Footer>
 </template>
