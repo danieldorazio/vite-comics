@@ -3,10 +3,50 @@
 
 .content {
     background-color: $bg-content;
-    p {
-        color: white;
-        @include my-padding(50px, 0, 50px, 0);
-        font-weight: bold;
-        cursor: pointer;
+    position: relative;
+
+    .jumbotron {
+        height: 300px;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
     }
+
+    button {
+        background-color: $hover_nav_bar;
+        @include my-padding (5px, 10px, 5px, 10px);
+        color: white;
+        font-weight: bold;
+        border: none;
+        // &.current {
+        //     position: absolute;
+        //     top: 284px;
+        //     left:20px;
+        // }
+
+        // &.load {
+        //     position: absolute;
+        //     bottom: 20px;
+        //     left: 290px
+        // }
+
+    }
+
+    .row {
+        @include my-flex(row, space-between, start);
+        flex-wrap: wrap;
+        gap: 5px;
+        @include my-padding (30px, 0, 20px, 0);
+
+        .col {
+            width: calc((100% - (5px * 8)) / 6);
+        }
+    }
+
 }

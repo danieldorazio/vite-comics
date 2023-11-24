@@ -8,11 +8,10 @@ section {
     div.container {
 
         @include my-flex (row, space-between, center);
-    
+        @include my-padding(20px, 20px, 20px, 20px);
 
          ul {
             @include my-flex (row, space-between, center);
-            @include my-padding(20px, 0, 20px, 0);
             gap: 20px;
 
             li {
