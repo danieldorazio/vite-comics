@@ -46,7 +46,7 @@
         <div class="container">
             <ul v-for="element in heroImg">
                 <li class="img"><img :src="getImagePath(element.img)" alt=""></li>
-                <li class="text">{{ element.text }}</li>
+                <li class="text"><a href="">{{ element.text }}</a></li>
             </ul>
         </div>
     </section>

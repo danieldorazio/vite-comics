@@ -1,2 +1,22 @@
 @use "./partials/mixins" as*;
 @use "./partials/varables" as*;
+
+
+
+
+
+.card {
+    @include my-flex (column, center, center);
+    img {
+        width: calc(100% - (8px * 8) / 6);
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: top;
+        cursor: pointer;
+    }
+
+    a {
+        color: white;
+        font-size: .6rem;
+    }
+}

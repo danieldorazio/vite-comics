@@ -8,9 +8,9 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="card">
         <img :src="thumb" alt="">
-        <span>{{ series }}</span>
+        <a href="">{{ series }}</a>
     </div>
 </template>
 <style lang="scss" scoped>

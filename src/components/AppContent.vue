@@ -91,15 +91,16 @@ export default {
         <div class="jumbotron">
             <img src="../assets/img/jumbotron.jpg" alt="">
         </div>
-        <button class="current">CURRENT SERIES</button>
         <div class="container">
+            <button class="current">CURRENT SERIES</button>
             <div class="row">
                 <div class="col" v-for="card in comics" :key="card">
                     <CardsComics :thumb="card.thumb" :series="card.series"  />
                 </div>
             </div>
+            <button class="load">LOAD MORE</button>
         </div>
-        <button class="load">LOAD MORE</button>
+       
     </section>
 </template>
 
